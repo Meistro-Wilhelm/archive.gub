@@ -73,7 +73,7 @@ app.get('/api/auth/levels', (req, res) => {
     { value: 6.7, label: 'Level 6.7' },
     { value: 9, label: 'Level 9 (CLASSIFIED)' },
     { value: 12, label: 'Level 12 (SECRET)' },
-    { value: 18, label: 'Level 18+ (LEVEL OMEGA)' }
+    { value: 18, label: 'Level 18+ (LEVEL OMEGA - TOP SECRET)' }
   ];
 
   const available = allLevels.filter(level => {

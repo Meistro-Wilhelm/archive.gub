@@ -66,11 +66,11 @@ Levels are **strictly hierarchical** (higher can see all below) **except** Level
 | 6.7    | Level 6.7                 | **Special** — requires explicit `has67` flag OR Level 18+ |
 | 9      | Level 9 (CLASSIFIED)      | Sees Level 3 + 9 docs                            |
 | 12     | Level 12 (SECRET)         | Sees Level 3 + 9 + 12 docs                      |
-| 18     | Level 18+ (LEVEL OMEGA)   | Sees everything (including 6.7)                  |
+| 18     | Level 18+ (LEVEL OMEGA - TOP SECRET) | Sees everything (including 6.7)           |
 
 **Important:** Capitalization of level names is exact and intentional. Do not change.
 
-The top designation defaults to **LEVEL OMEGA** — use **TOP-SECRET** only if explicitly instructed.
+The top designation is **LEVEL OMEGA - TOP SECRET**.
 
 ## Authentication Flow
 
@@ -138,7 +138,7 @@ _No linter or formatter configured yet._
 - Always read existing files before modifying them.
 - Update this CLAUDE.md when adding new tooling, frameworks, or conventions.
 - **Do not change clearance level names or capitalization** — they are intentional.
-- Default top designation is **LEVEL OMEGA**, not TOP-SECRET (unless owner says otherwise).
+- Default top designation is **LEVEL OMEGA - TOP SECRET**.
 - Level 6.7 is special — it is NOT part of the normal hierarchy. Check `has67` flag.
 - Documents must never be downloadable. Maintain copy/download prevention.
 - The hidden umlaut trigger is intentional — do not make it visible or obvious.

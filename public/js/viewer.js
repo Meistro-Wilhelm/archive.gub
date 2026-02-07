@@ -16,7 +16,7 @@ const LEVEL_LABELS = {
   6.7: 'Level 6.7',
   9: 'Level 9 (CLASSIFIED)',
   12: 'Level 12 (SECRET)',
-  18: 'Level 18+ (LEVEL OMEGA)'
+  18: 'Level 18+ (LEVEL OMEGA - TOP SECRET)'
 };
 
 // ===== Disable keyboard shortcuts for save/print =====

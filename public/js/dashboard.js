@@ -16,7 +16,7 @@ const LEVEL_LABELS = {
   6.7: 'Level 6.7',
   9: 'Level 9 (CLASSIFIED)',
   12: 'Level 12 (SECRET)',
-  18: 'Level 18+ (LEVEL OMEGA)'
+  18: 'Level 18+ (LEVEL OMEGA - TOP SECRET)'
 };
 
 // ===== Check Session =====
@@ -143,7 +143,6 @@ function renderDocuments(documents) {
           <div class="doc-title">${escapeHtml(doc.title)}</div>
           <div class="doc-summary">${escapeHtml(doc.summary)}</div>
         </div>
-        <div class="doc-date">${doc.date}</div>
       `;
 
       list.appendChild(item);

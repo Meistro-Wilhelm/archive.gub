@@ -72,16 +72,16 @@
 }
 
 /* Hidden umlaut trigger — positioned over the right dot of Ü in the logo image.
-   Adjust top/right values if the image changes. */
+   Adjust top/right/width/height values if the image changes. */
 .gub-logo-img-wrap .umlaut-right-dot {
   position: absolute;
-  top: 15%;
-  right: 32%;
-  width: 8%;
-  height: 16%;
+  display: block;
+  top: 0;
+  right: 25%;
+  width: 20%;
+  height: 40%;
   cursor: pointer;
   z-index: 10;
-  border-radius: 50%;
 }
 
 /* Nav menu items */
