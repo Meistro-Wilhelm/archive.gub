@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GÜB</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Menu Bar -->
+  <div class="menu-bar">
+    <div class="menu-left">
+      <a href="index.html">GÜB</a>
+    </div>
+    <div class="menu-right">
+      <span class="toggle-label">LIGHT</span>
+      <label class="theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <span class="toggle-slider"></span>
+      </label>
+      <span class="toggle-label">DARK</span>
+    </div>
+  </div>
+
+  <!-- Home Page Content -->
+  <div class="home-container">
+    <div class="home-image-placeholder">IMAGE<br>PLACEHOLDER</div>
+
+    <div class="home-logo-area">
+      <div class="home-logo-text">
+        G<span class="umlaut-trigger">Ü<span class="umlaut-right-dot" id="umlaut-trigger" title=""></span></span>B
+      </div>
+      <div class="home-subtitle">Gemeinschaft für Überwachung</div>
+    </div>
+
+    <div class="home-nav">
+      <a href="#">Verein</a>
+      <a href="#">Dienstleistungen</a>
+      <a href="#">Downloads</a>
+      <a href="#">Kontakt</a>
+    </div>
+  </div>
+
+  <!-- Auth Overlay: Step 1 — Personal Code -->
+  <div class="auth-overlay" id="auth-step1">
+    <div class="auth-box">
+      <h2>IDENTIFICATION</h2>
+      <p>Enter your personal access code.</p>
+      <div class="auth-error" id="code-error">Invalid code. Access denied.</div>
+      <input type="password" id="code-input" placeholder="ACCESS CODE" autocomplete="off" spellcheck="false">
+      <button id="code-submit">VERIFY</button>
+    </div>
+  </div>
+
+  <!-- Auth Overlay: Step 2 — Passkey -->
+  <div class="auth-overlay" id="auth-step2">
+    <div class="auth-box">
+      <h2>AUTHORIZATION</h2>
+      <p>Enter your personnel passkey.</p>
+      <div class="auth-error" id="passkey-error">Invalid passkey. Access denied.</div>
+      <input type="password" id="passkey-input" placeholder="PERSONNEL PASSKEY" autocomplete="off" spellcheck="false">
+      <button id="passkey-submit">AUTHORIZE</button>
+    </div>
+  </div>
+
+  <!-- Auth Overlay: Step 3 — Level Selection -->
+  <div class="auth-overlay" id="auth-step3">
+    <div class="auth-box">
+      <h2>CLEARANCE SELECTION</h2>
+      <p>Select the clearance level you wish to access.</p>
+      <select id="level-select">
+        <option value="all">ALL AVAILABLE LEVELS</option>
+      </select>
+      <button id="level-submit">PROCEED</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
