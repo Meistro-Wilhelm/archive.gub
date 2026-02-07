@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
-  secret: 'gub-archive-session-key-2026',
+  secret: process.env.SESSION_SECRET || 'gub-archive-session-key-2026',
   resave: false,
   saveUninitialized: false,
   cookie: { maxAge: 3600000 }
