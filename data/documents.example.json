@@ -1,0 +1,18 @@
+[
+  {
+    "id": "doc-001",
+    "title": "Document Title",
+    "summary": "Short description of the document.",
+    "clearance": 3,
+    "date": "2026-01-15",
+    "content": "<h2>Document Title</h2><p>Document body in HTML. Supports <img> tags for images.</p>"
+  },
+  {
+    "id": "doc-002",
+    "title": "Another Document",
+    "summary": "Another short description.",
+    "clearance": 9,
+    "date": "2026-02-01",
+    "content": "<h2>Another Document</h2><p>Content here.</p>"
+  }
+]

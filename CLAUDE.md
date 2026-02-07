@@ -19,8 +19,10 @@ archive.gub/
 ├── server.js              # Express server (auth API, document API, routing)
 ├── .gitignore             # Git ignore rules
 ├── data/
-│   ├── users.json         # User credentials, passkeys, and clearance levels
-│   └── documents.json     # Document metadata and HTML content
+│   ├── users.json         # GITIGNORED — real credentials (server only)
+│   ├── documents.json     # GITIGNORED — real documents (server only)
+│   ├── users.example.json       # Template showing expected user format
+│   └── documents.example.json   # Template showing expected document format
 └── public/
     ├── index.html          # Home page (GÜB-style, hidden auth trigger)
     ├── dashboard.html      # Document list with search and level filtering
@@ -33,10 +35,17 @@ archive.gub/
         └── viewer.js       # Document rendering, copy/download prevention
 ```
 
+**Security:** The repo is public but `data/users.json` and `data/documents.json` are gitignored. Real data lives only on the server. The `*.example.json` files show the expected format without exposing real credentials or documents.
+
 ## Development Setup
 
 ```sh
 npm install
+
+# Copy example data files and fill in real values
+cp data/users.example.json data/users.json
+cp data/documents.example.json data/documents.json
+
 npm start        # Runs on http://localhost:3000
 ```
 
@@ -121,9 +130,11 @@ _No linter or formatter configured yet._
 | 2026-02-07 | JSON file storage | No database needed for ~25 docs and ~35 users |
 | 2026-02-07 | Hidden auth entry point | Security through obscurity — umlaut dot trigger |
 | 2026-02-07 | Courier Prime font | Per project requirements |
+| 2026-02-07 | Public repo + backend deploy | Data gitignored, real site runs on Express backend |
 
 ## Notes for AI Assistants
 
+- **NEVER commit `data/users.json` or `data/documents.json`** — they contain real credentials and classified content.
 - Always read existing files before modifying them.
 - Update this CLAUDE.md when adding new tooling, frameworks, or conventions.
 - **Do not change clearance level names or capitalization** — they are intentional.

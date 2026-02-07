@@ -1,0 +1,18 @@
+[
+  {
+    "id": "user-001",
+    "name": "Agent Name",
+    "code": "GUB-XXXX",
+    "passkey": "CALLSIGN-001",
+    "clearance": 18,
+    "has67": true
+  },
+  {
+    "id": "user-002",
+    "name": "Agent Name",
+    "code": "GUB-XXXX",
+    "passkey": "CALLSIGN-002",
+    "clearance": 9,
+    "has67": false
+  }
+]
