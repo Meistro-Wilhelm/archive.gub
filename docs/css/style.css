@@ -570,6 +570,13 @@
   font-family: 'Courier Prime', monospace;
 }
 
+.header-logo {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
 .site-title {
   font-size: 36px;
   font-weight: 700;
