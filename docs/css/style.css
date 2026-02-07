@@ -268,6 +268,44 @@
   color: #8899bb;
 }
 
+/* Profile Card */
+.profile-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 24px 0;
+}
+
+.profile-photo {
+  flex-shrink: 0;
+}
+
+.profile-photo img {
+  width: 180px;
+  height: auto;
+  border: 3px solid #2c3e6b;
+  display: block;
+}
+
+.profile-details {
+  padding-top: 8px;
+}
+
+.profile-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e6b;
+  margin-bottom: 8px;
+}
+
+.profile-title {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
 /* Auth overlay (appears on GÜB page — uses GÜB styling) */
 .gub-page .auth-overlay {
   display: none;

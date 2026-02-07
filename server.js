@@ -192,6 +192,10 @@ app.get('/view/:id', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'viewer.html'));
 });
 
+app.get('/co-direktor', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'co-direktor.html'));
+});
+
 app.listen(PORT, () => {
   console.log(`ARCHIVE.GUB running on http://localhost:${PORT}`);
 });
