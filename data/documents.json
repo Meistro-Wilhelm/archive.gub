@@ -1,0 +1,66 @@
+[
+  {
+    "id": "doc-001",
+    "title": "GÜB Operational Overview",
+    "summary": "General overview of GÜB operations and organizational structure.",
+    "clearance": 3,
+    "date": "2026-01-15",
+    "content": "<h2>GÜB Operational Overview</h2><p>This document provides a general overview of GÜB operations, covering organizational structure, mission directives, and standard operating procedures.</p><p>All personnel are expected to familiarize themselves with this document upon onboarding.</p>"
+  },
+  {
+    "id": "doc-002",
+    "title": "Field Protocol Manual",
+    "summary": "Standard field protocols for Level three operatives.",
+    "clearance": 3,
+    "date": "2026-01-20",
+    "content": "<h2>Field Protocol Manual</h2><p>This manual outlines the standard field protocols to be followed during all authorized operations. Deviations require written authorization from a Level 9 or higher officer.</p>"
+  },
+  {
+    "id": "doc-003",
+    "title": "Designation 6.7 — Special Access Materials",
+    "summary": "Materials restricted to personnel with Authorization Level 6.7.",
+    "clearance": 6.7,
+    "date": "2026-01-22",
+    "content": "<h2>Designation 6.7 — Special Access Materials</h2><p>This document contains materials classified under the special 6.7 designation. Access is restricted to personnel with explicit Authorization Level 6.7 or Authorization Level 18+.</p><p>Contents of this file are compartmentalized and must not be discussed outside of authorized channels.</p>"
+  },
+  {
+    "id": "doc-004",
+    "title": "Intelligence Summary — Q1 2026",
+    "summary": "Quarterly intelligence summary. CLASSIFIED.",
+    "clearance": 9,
+    "date": "2026-02-01",
+    "content": "<h2>Intelligence Summary — Q1 2026</h2><p>CLASSIFIED — This quarterly intelligence summary covers key developments, threat assessments, and operational intelligence gathered during Q1 2026.</p><p>Distribution is limited to Level 9 (CLASSIFIED) personnel and above.</p>"
+  },
+  {
+    "id": "doc-005",
+    "title": "Threat Assessment Matrix",
+    "summary": "Current threat assessment matrix for active operations.",
+    "clearance": 9,
+    "date": "2026-02-03",
+    "content": "<h2>Threat Assessment Matrix</h2><p>CLASSIFIED — This document provides the current threat assessment matrix used to evaluate risk across all active GÜB operations.</p>"
+  },
+  {
+    "id": "doc-006",
+    "title": "Project SABLE — Mission Brief",
+    "summary": "SECRET mission briefing for Project SABLE.",
+    "clearance": 12,
+    "date": "2026-02-04",
+    "content": "<h2>Project SABLE — Mission Brief</h2><p>SECRET — This mission brief details the objectives, personnel assignments, and operational parameters for Project SABLE.</p><p>Unauthorized disclosure will result in immediate clearance revocation.</p>"
+  },
+  {
+    "id": "doc-007",
+    "title": "Asset Registry — Active",
+    "summary": "SECRET registry of currently active assets.",
+    "clearance": 12,
+    "date": "2026-02-05",
+    "content": "<h2>Asset Registry — Active</h2><p>SECRET — Complete registry of all currently active assets under GÜB jurisdiction. Includes handler assignments and operational status.</p>"
+  },
+  {
+    "id": "doc-008",
+    "title": "OMEGA Directive",
+    "summary": "LEVEL OMEGA — Top-level directive document.",
+    "clearance": 18,
+    "date": "2026-02-06",
+    "content": "<h2>OMEGA Directive</h2><p>LEVEL OMEGA — This document contains the highest-level directives governing GÜB operations. Access is restricted to personnel with Level 18+ (LEVEL OMEGA) clearance.</p><p>The contents of this directive supersede all prior operational mandates.</p>"
+  }
+]

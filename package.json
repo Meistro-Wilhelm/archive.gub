@@ -1,0 +1,21 @@
+{
+  "name": "archive.gub",
+  "version": "1.0.0",
+  "description": "A website that houses the Güb Files.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:62781/git/Meistro-Wilhelm/archive.gub"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-session": "^1.19.0"
+  }
+}
