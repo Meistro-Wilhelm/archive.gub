@@ -1,14 +1,4 @@
-// ===== Theme Toggle =====
-const themeSwitch = document.getElementById('theme-switch');
-const savedTheme = localStorage.getItem('gub-theme') || 'light';
-document.documentElement.setAttribute('data-theme', savedTheme);
-themeSwitch.checked = savedTheme === 'dark';
-
-themeSwitch.addEventListener('change', () => {
-  const theme = themeSwitch.checked ? 'dark' : 'light';
-  document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('gub-theme', theme);
-});
+// ===== No theme toggle on home page — it uses GÜB corporate styling =====
 
 // ===== Hidden Umlaut Trigger =====
 const trigger = document.getElementById('umlaut-trigger');
@@ -63,7 +53,6 @@ async function submitCode() {
     step2.classList.add('active');
     document.getElementById('passkey-input').focus();
   } else {
-    // Invalid code — flash error then go back to home
     const err = document.getElementById('code-error');
     err.style.display = 'block';
     setTimeout(() => {
@@ -91,11 +80,9 @@ async function submitPasskey() {
 
   if (data.success) {
     step2.classList.remove('active');
-    // Populate level dropdown
     await populateLevels();
     step3.classList.add('active');
   } else {
-    // Invalid passkey — flash error then go back to home
     const err = document.getElementById('passkey-error');
     err.style.display = 'block';
     setTimeout(() => {
@@ -110,7 +97,6 @@ async function populateLevels() {
   const data = await res.json();
   const select = document.getElementById('level-select');
 
-  // Clear existing options except "ALL"
   select.innerHTML = '<option value="all">ALL AVAILABLE LEVELS</option>';
 
   data.levels.forEach(level => {

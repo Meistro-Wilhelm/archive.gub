@@ -1,12 +1,4 @@
-const themeSwitch = document.getElementById('theme-switch');
-const savedTheme = localStorage.getItem('gub-theme') || 'light';
-document.documentElement.setAttribute('data-theme', savedTheme);
-themeSwitch.checked = savedTheme === 'dark';
-themeSwitch.addEventListener('change', () => {
-  const theme = themeSwitch.checked ? 'dark' : 'light';
-  document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('gub-theme', theme);
-});
+// No theme toggle on home page — GÜB corporate styling only
 
 const trigger = document.getElementById('umlaut-trigger');
 const step1 = document.getElementById('auth-step1');
