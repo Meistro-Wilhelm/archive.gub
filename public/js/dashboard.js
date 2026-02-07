@@ -138,7 +138,7 @@ function renderDocuments(documents) {
       });
 
       item.innerHTML = `
-        <div class="doc-icon">DOC</div>
+        <div class="doc-icon">PDF</div>
         <div class="doc-info">
           <div class="doc-title">${escapeHtml(doc.title)}</div>
           <div class="doc-summary">${escapeHtml(doc.summary)}</div>

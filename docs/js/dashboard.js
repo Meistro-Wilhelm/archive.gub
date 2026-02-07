@@ -82,7 +82,7 @@ function renderDocuments(documents) {
       const item = document.createElement('li');
       item.className = 'doc-item';
       item.addEventListener('click', () => { window.location.href = 'viewer.html?id=' + doc.id; });
-      item.innerHTML = '<div class="doc-icon">DOC</div><div class="doc-info"><div class="doc-title">' + escapeHtml(doc.title) + '</div><div class="doc-summary">' + escapeHtml(doc.summary) + '</div></div>';
+      item.innerHTML = '<div class="doc-icon">PDF</div><div class="doc-info"><div class="doc-title">' + escapeHtml(doc.title) + '</div><div class="doc-summary">' + escapeHtml(doc.summary) + '</div></div>';
       list.appendChild(item);
     });
 
