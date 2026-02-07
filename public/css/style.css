@@ -51,13 +51,17 @@
   padding: 12px 0;
 }
 
-.gub-logo-text {
-  font-size: 28px;
-  font-weight: 700;
-  color: #2c3e6b;
-  letter-spacing: 1px;
-  user-select: none;
+.gub-logo-img-wrap {
   position: relative;
+  display: inline-block;
+}
+
+.gub-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .gub-logo-subtitle {
@@ -67,19 +71,14 @@
   letter-spacing: 0.5px;
 }
 
-/* Hidden umlaut trigger */
-.umlaut-trigger {
-  cursor: default;
-  position: relative;
-  display: inline-block;
-}
-
-.umlaut-right-dot {
+/* Hidden umlaut trigger — positioned over the right dot of Ü in the logo image.
+   Adjust top/right values if the image changes. */
+.gub-logo-img-wrap .umlaut-right-dot {
   position: absolute;
-  top: -1px;
-  right: 3px;
-  width: 10px;
-  height: 10px;
+  top: 15%;
+  right: 32%;
+  width: 8%;
+  height: 16%;
   cursor: pointer;
   z-index: 10;
   border-radius: 50%;
