@@ -115,8 +115,12 @@ function renderDocuments(documents) {
     groups[key].push(doc);
   });
 
-  // Sort groups by clearance level
-  const sortedKeys = Object.keys(groups).map(Number).sort((a, b) => a - b);
+  // Sort groups by clearance level (6.7 always last — it's special)
+  const sortedKeys = Object.keys(groups).map(Number).sort((a, b) => {
+    if (a === 6.7) return 1;
+    if (b === 6.7) return -1;
+    return a - b;
+  });
 
   sortedKeys.forEach(level => {
     const section = document.createElement('div');

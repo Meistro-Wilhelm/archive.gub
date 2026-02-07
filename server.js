@@ -148,8 +148,12 @@ app.get('/api/documents', (req, res) => {
     return true;
   });
 
-  // Sort by clearance level ascending
-  filtered.sort((a, b) => a.clearance - b.clearance);
+  // Sort by clearance level ascending (6.7 always last — it's special)
+  filtered.sort((a, b) => {
+    if (a.clearance === 6.7) return 1;
+    if (b.clearance === 6.7) return -1;
+    return a.clearance - b.clearance;
+  });
 
   // Strip content from list view
   const list = filtered.map(({ id, title, summary, clearance, date }) => ({

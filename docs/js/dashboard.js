@@ -66,7 +66,11 @@ function renderDocuments(documents) {
     groups[doc.clearance].push(doc);
   });
 
-  Object.keys(groups).map(Number).sort((a, b) => a - b).forEach(level => {
+  Object.keys(groups).map(Number).sort((a, b) => {
+    if (a === 6.7) return 1;
+    if (b === 6.7) return -1;
+    return a - b;
+  }).forEach(level => {
     const section = document.createElement('div');
     section.className = 'clearance-section';
 
